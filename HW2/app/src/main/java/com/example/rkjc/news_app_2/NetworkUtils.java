@@ -13,7 +13,7 @@ public class NetworkUtils {
     public final static String BASE_URL = "https://newsapi.org/v1/articles";
     public final static String SOURCE = "the-next-web";
     public final static String SORTBY = "latest";
-    public final static String APIKEY = "18f1145f04c249fc85f158c30a0b5306";
+    public final static String APIKEY = "";
 
     public static URL buildURL() {
         Uri uri = Uri.parse(BASE_URL).buildUpon()

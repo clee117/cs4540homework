@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onChanged(@Nullable List<NewsItem> newsItems) {
                 adapter.mItems = (ArrayList<NewsItem>) newsItems;
+                adapter.notifyDataSetChanged();
             }
         });
     }
@@ -64,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
         switch(id) { // Uses switch instead of an if statement
             case R.id.action_search:
                 viewModel.syncData();
-                adapter.notifyDataSetChanged();
                 //NewsQueryTask task = new NewsQueryTask();
                 //task.execute();
                 break;

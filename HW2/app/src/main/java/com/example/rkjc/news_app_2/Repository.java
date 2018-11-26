@@ -29,7 +29,7 @@ public class Repository {
 
         @Override
         protected Void doInBackground(Void... params) {
-            dao.loadAllNewsItems();
+            allItems = dao.loadAllNewsItems();
             return null;
         }
     }

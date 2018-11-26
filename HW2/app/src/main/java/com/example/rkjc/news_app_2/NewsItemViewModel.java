@@ -16,7 +16,12 @@ public class NewsItemViewModel extends AndroidViewModel {
         allItems = repo.getItems();
     }
 
-    public LiveData<List<NewsItem>> getItems() {return allItems;}
-    public void syncData() {repo.syncDataBase();}
+    public LiveData<List<NewsItem>> getItems() {
+        return allItems;
+    }
+    public void syncData() {
+        repo.syncDataBase();
+        allItems = repo.getItems();
+    }
 
 }
