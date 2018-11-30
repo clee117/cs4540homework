@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">news-app-2</string>
+    <string name="title_activity_web">WebActivity</string>
+    <string name="main_channel_name">Main</string>
+    <string name="notification_title">Refresh Job Activated</string>
+    <string name="notification_text">News items refreshed</string>
+</resources>
